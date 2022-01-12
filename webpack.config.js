@@ -1,4 +1,5 @@
 const path = require('path');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
   name: 'web game with react',
@@ -23,12 +24,23 @@ module.exports = {
             debug: true,
           }],
           '@babel/preset-react'
-        ] // 바벨의 프리셋을 적용하는 옵션
+        ], // 바벨의 프리셋을 적용하는 옵션
+        plugins: [
+          'react-refresh/babel'
+        ]
       }
     }],
   },
+  plugins: [
+    new ReactRefreshWebpackPlugin(),
+  ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app.js',
   },
+  devServer: {
+    devMiddleware: { publicPath: '/dist' },
+    static: { directory: path.resolve(__dirname) }, 
+    hot: true
+  }
 }
