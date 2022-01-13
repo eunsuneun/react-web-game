@@ -13,7 +13,7 @@ const Gugudan = () => {
       setFirst(Math.ceil(Math.random()*9));
       setSecond(Math.ceil(Math.random()*9));
       setValue('');
-      setResult('정답');
+      setResult('정답' + value);
       inputEl.current.focus();
     }else{
       setValue('');
