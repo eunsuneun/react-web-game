@@ -5,6 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>웹 게임을 만들며 배우는 React</title>
+  <style>
+    /* responsive check */
+    #responsive-check #screen {
+      width: 300px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      user-select: none;
+    }
+    #responsive-check #screen.waiting {
+      background-color: aqua;
+    }
+    #responsive-check #screen.waiting-again {
+      background-color: aqua;
+      line-height: 1.5;
+      padding-top: 77px;
+      white-space: pre-line;
+      box-sizing: border-box;
+    }
+    #responsive-check #screen.ready {
+      background-color: red;
+      color: whitesmoke;
+    }
+    #responsive-check #screen.now {
+      background-color: greenyellow;
+    }
+    
+    /* rockscssiorpaper */
+    #rock-scssior-paper #computer {
+      width: 142px;
+      height: 200px;
+      background-position: 0 0;
+    }
+    
+  </style>
 </head> 
 <body>
   <div id="root"></div>

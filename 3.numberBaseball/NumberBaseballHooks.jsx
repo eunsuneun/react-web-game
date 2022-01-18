@@ -1,5 +1,5 @@
 import React, { useState, useRef, memo } from 'react';
-import Try from './Try';
+import Try from './TryHooks';
 
 function getNumbers() { 
   // this를 쓰지않는 함수는 밖으로 빼는게 좋다. 다른데서도 쓸 수 있도록
