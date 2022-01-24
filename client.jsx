@@ -13,5 +13,6 @@ import RockScssiorPaperClass from './5.rockScissorPaper/RockScssiorPaperClass';
 import RockScssiorPaperHooks from './5.rockScissorPaper/RockScssiorPaperHooks';
 import LottoClass from './6.lotto/LottoClass';
 import LottoHooks from './6.lotto/LottoHooks';
+import TictactoeHooks from './7.tictactoe/TictactoeHooks';
 
-ReactDom.render(<LottoHooks />, document.querySelector('#root'));
+ReactDom.render(<TictactoeHooks />, document.querySelector('#root'));
